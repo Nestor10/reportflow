@@ -216,7 +216,8 @@ object DeploymentSettings {
       Docker / maintainer     := "Eric Smith",
       Docker / dockerUsername := Some("nestor9001"),
       Docker / packageName    := "reportflow",
-      dockerBaseImage         := "azul/zulu-openjdk-alpine:23-latest",
+      Docker / version := "test",
+      dockerBaseImage         := "docker.io/azul/zulu-openjdk-alpine:23-latest",
       dockerRepository        := Some("quay.io"),
       dockerUpdateLatest      := true,
       dockerExposedPorts      := Seq(8000)
