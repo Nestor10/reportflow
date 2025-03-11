@@ -1,0 +1,5 @@
+images:
+- name: quay.io/nestor9001/reportflow
+  newTag: latest
+resources:
+- "../../app"

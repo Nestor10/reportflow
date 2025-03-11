@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: reportflow-svc
+  labels:
+    app: reportflow
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+  clusterIP: None
+  selector:
+    app: reportflow
