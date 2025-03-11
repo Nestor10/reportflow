@@ -25,6 +25,8 @@ spec:
           env:
             - name: DATABASE_JDBC_URL
               value: "jdbc:postgresql://postgresql-svc:5432/reportflow"
+            - name: DATABASE_USER
+              value: docker
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
