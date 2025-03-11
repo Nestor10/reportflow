@@ -10,7 +10,6 @@ import Dependencies._
 import DeploymentSettings._
 
 val scala3 = "3.6.3"
-
 name := "reportflow"
 
 inThisBuild(
@@ -18,6 +17,8 @@ inThisBuild(
     scalaVersion      := scala3,
     semanticdbEnabled := true,
     semanticdbVersion := scalafixSemanticdb.revision,
+    dynverSeparator := "-",
+
     scalacOptions ++= Seq(
       "-deprecation",
       "-feature",
@@ -72,7 +73,7 @@ lazy val server = project
   .settings(
     fork := true,
     serverLibraryDependencies,
-    testingLibraryDependencies
+    testingLibraryDependencies,
   )
   .settings(serverSettings(client): _*)
   .dependsOn(sharedJvm)

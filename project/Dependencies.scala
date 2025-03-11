@@ -19,7 +19,7 @@ object Dependencies {
     val scopt                 = "4.1.0"
     val slf4j                 = "2.0.16"
     val stripe                = "25.10.0"
-    val sttp                  = "3.9.6"
+    val sttp                  = "3.10.3"
     val tapir                 = "1.11.11"
     val zio                   = "2.1.14"
     val zioConfig             = "4.0.2"
